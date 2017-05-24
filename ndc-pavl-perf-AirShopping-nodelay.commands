@@ -1,0 +1,136 @@
+# End any active sessions that might be lingering
+end/session?session={{session[0]}}
+
+# delete any existing stubs for the Stub-O-Matic scenarios that are used by our tests
+delete/stubs?scenario={{scenario[0]}}
+
+# Set delay policies
+
+# Vayant delay for scenario AS01_ LONEDI_Account_Code
+put/delay_policy?name=VAYANT_DELAY_LON_EDI&delay_type=fixed&milliseconds={{vayant_delay_lon_edi[0]}}
+
+# Vayant delay for scenario AS02_EDINYC
+put/delay_policy?name=SLNG_DELAY_EDI_NYC&delay_type=fixed&milliseconds={{slng_delay_edi_nyc[0]}}
+
+# Vayant delay for scenario AS03_BIOHYD
+put/delay_policy?name=SLNG_DELAY_BIO_HYD&delay_type=fixed&milliseconds={{slng_delay_bio_hyd[0]}}
+
+# Vayant delay for scenario AS04_LONSOF
+put/delay_policy?name=VAYANT_DELAY_LON_SOF&delay_type=fixed&milliseconds={{vayant_delay_lon_sof[0]}}
+
+# Vayant delay for scenario AS05_LONGVA
+put/delay_policy?name=VAYANT_DELAY_LON_GVA&delay_type=fixed&milliseconds={{vayant_delay_lon_gva[0]}}
+
+
+
+# Begin a new session, whose sole purpose is to insert our stubs into Stub-O-Matic, for the scenario that is used by our tests
+begin/session?scenario={{scenario[0]}}&session={{session[0]}}&mode=record
+
+
+# Load the stubs for AS01_ LONEDI_Account_Code scenario
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_0_0.textMatcher,ndc-pavl-AirShopping_1495024737_0.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_1_0.textMatcher,ndc-pavl-AirShopping_1495024737_1.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_2_0.textMatcher,ndc-pavl-AirShopping_1495024737_2.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_3_0.textMatcher,ndc-pavl-AirShopping_1495024737_3.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_4_0.textMatcher,ndc-pavl-AirShopping_1495024737_4.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_5_0.textMatcher,ndc-pavl-AirShopping_1495024737_5.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_6_0.textMatcher,ndc-pavl-AirShopping_1495024737_6.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_7_0.textMatcher,ndc-pavl-AirShopping_1495024737_7.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_8_0.textMatcher,ndc-pavl-AirShopping_1495024737_8.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_9_0.textMatcher,ndc-pavl-AirShopping_1495024737_9.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_10_0.textMatcher,ndc-pavl-AirShopping_1495024737_10.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_11_0.textMatcher,ndc-pavl-AirShopping_1495024737_11.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_12_0.textMatcher,ndc-pavl-AirShopping_1495024737_12.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_13_0.textMatcher,ndc-pavl-AirShopping_1495024737_13.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_14_0.textMatcher,ndc-pavl-AirShopping_1495024737_14.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_15_0.textMatcher,ndc-pavl-AirShopping_1495024737_15.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_16_0.textMatcher,ndc-pavl-AirShopping_1495024737_16.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_17_0.textMatcher,ndc-pavl-AirShopping_1495024737_17.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_18_0.textMatcher,ndc-pavl-AirShopping_1495024737_18.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_19_0.textMatcher,ndc-pavl-AirShopping_1495024737_19.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_20_0.textMatcher,ndc-pavl-AirShopping_1495024737_20.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_21_0.textMatcher,ndc-pavl-AirShopping_1495024737_21.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_22_0.textMatcher,ndc-pavl-AirShopping_1495024737_22.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495024737_23_0.textMatcher,ndc-pavl-AirShopping_1495024737_23.response
+# name=FLIGHTS_PKG.LOADCABINBRANDNAMES() stub which was missing
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495197055_10_0.textMatcher,ndc-pavl-AirShopping_1495197055_10.response
+
+
+
+# Load the stubs for AS02_EDINYC scenario
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1494950095_0_0.textMatcher,ndc-pavl-AirShopping_1494950095_0.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1494950095_1_0.textMatcher,ndc-pavl-AirShopping_1494950095_1.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1494950095_2_0.textMatcher,ndc-pavl-AirShopping_1494950095_2.response
+
+
+
+# Load the stubs for AS03_BIOHYD scenario
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1494866490_0_0.textMatcher,ndc-pavl-AirShopping_1494866490_0.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1494866490_1_0.textMatcher,ndc-pavl-AirShopping_1494866490_1.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1494866490_2_0.textMatcher,ndc-pavl-AirShopping_1494866490_2.response
+
+
+
+# Load the stubs for AS04_LONSOF scenario
+
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_0_0.textMatcher,ndc-pavl-AirShopping_1495027100_0.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_1_0.textMatcher,ndc-pavl-AirShopping_1495027100_1.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_2_0.textMatcher,ndc-pavl-AirShopping_1495027100_2.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_3_0.textMatcher,ndc-pavl-AirShopping_1495027100_3.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_4_0.textMatcher,ndc-pavl-AirShopping_1495027100_4.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_5_0.textMatcher,ndc-pavl-AirShopping_1495027100_5.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_6_0.textMatcher,ndc-pavl-AirShopping_1495027100_6.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_7_0.textMatcher,ndc-pavl-AirShopping_1495027100_7.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_8_0.textMatcher,ndc-pavl-AirShopping_1495027100_8.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_9_0.textMatcher,ndc-pavl-AirShopping_1495027100_9.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_10_0.textMatcher,ndc-pavl-AirShopping_1495027100_10.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_11_0.textMatcher,ndc-pavl-AirShopping_1495027100_11.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_12_0.textMatcher,ndc-pavl-AirShopping_1495027100_12.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_13_0.textMatcher,ndc-pavl-AirShopping_1495027100_13.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_14_0.textMatcher,ndc-pavl-AirShopping_1495027100_14.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_15_0.textMatcher,ndc-pavl-AirShopping_1495027100_15.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_16_0.textMatcher,ndc-pavl-AirShopping_1495027100_16.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_17_0.textMatcher,ndc-pavl-AirShopping_1495027100_17.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_18_0.textMatcher,ndc-pavl-AirShopping_1495027100_18.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_19_0.textMatcher,ndc-pavl-AirShopping_1495027100_19.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_20_0.textMatcher,ndc-pavl-AirShopping_1495027100_20.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_21_0.textMatcher,ndc-pavl-AirShopping_1495027100_21.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027100_22_0.textMatcher,ndc-pavl-AirShopping_1495027100_22.response
+
+
+
+# Load the stubs for AS05_ LONGVA scenario
+
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_0_0.textMatcher,ndc-pavl-AirShopping_1495027352_0.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_1_0.textMatcher,ndc-pavl-AirShopping_1495027352_1.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_2_0.textMatcher,ndc-pavl-AirShopping_1495027352_2.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_3_0.textMatcher,ndc-pavl-AirShopping_1495027352_3.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_4_0.textMatcher,ndc-pavl-AirShopping_1495027352_4.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_5_0.textMatcher,ndc-pavl-AirShopping_1495027352_5.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_6_0.textMatcher,ndc-pavl-AirShopping_1495027352_6.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_7_0.textMatcher,ndc-pavl-AirShopping_1495027352_7.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_8_0.textMatcher,ndc-pavl-AirShopping_1495027352_8.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_9_0.textMatcher,ndc-pavl-AirShopping_1495027352_9.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_10_0.textMatcher,ndc-pavl-AirShopping_1495027352_10.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_11_0.textMatcher,ndc-pavl-AirShopping_1495027352_11.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_12_0.textMatcher,ndc-pavl-AirShopping_1495027352_12.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_13_0.textMatcher,ndc-pavl-AirShopping_1495027352_13.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_14_0.textMatcher,ndc-pavl-AirShopping_1495027352_14.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_15_0.textMatcher,ndc-pavl-AirShopping_1495027352_15.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_16_0.textMatcher,ndc-pavl-AirShopping_1495027352_16.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_17_0.textMatcher,ndc-pavl-AirShopping_1495027352_17.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_18_0.textMatcher,ndc-pavl-AirShopping_1495027352_18.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_19_0.textMatcher,ndc-pavl-AirShopping_1495027352_19.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_20_0.textMatcher,ndc-pavl-AirShopping_1495027352_20.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_21_0.textMatcher,ndc-pavl-AirShopping_1495027352_21.response
+put/stub?session={{session[0]}}&mode=record&scenario={{scenario[0]}},ndc-pavl-AirShopping_1495027352_22_0.textMatcher,ndc-pavl-AirShopping_1495027352_22.response
+
+
+
+# End recording session
+
+end/session?session={{session[0]}}
+
+# Start session in playback mode
+
+begin/session?scenario={{scenario[0]}}&session={{session[0]}}&mode=playback
